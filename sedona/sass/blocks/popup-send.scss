@@ -1,0 +1,95 @@
+.popup-send {
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  background-color: #ffffff;
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .popup-send {
+    width: 640px;
+  }
+}
+
+.popup-send__text-wrapper {
+  padding-top: 49px;
+  padding-bottom: 40px;
+
+  @include padding-lr-50;
+}
+
+@media (min-width: $tablet-width) {
+  .popup-send__text-wrapper {
+    padding-top: 64px;
+    padding-bottom: 40px;
+
+    @include padding-lr-100;
+  }
+}
+
+.popup-send__title {
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  color: $black-two;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .popup-send__title {
+    font-size: 30px;
+    line-height: 0.87;
+  }
+}
+
+.popup-send__description {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: $black;
+  margin-top: 25px;
+}
+
+.popup-send__button-wrapper {
+  background-color: $light-grey;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include padding-lr-20;
+  @include padding-tb-20;
+
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .popup-send__button-wrapper {
+    @include padding-lr-60;
+    @include padding-tb-44;
+  }
+}
+
+.popup-send__button {
+  width: 280px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1.44;
+}
+
+@media (min-width: $tablet-width) {
+  .popup-send__button {
+    width: 458px;
+    font-size: 21px;
+    line-height: 1.24;
+  }
+}

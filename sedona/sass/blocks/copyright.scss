@@ -1,0 +1,50 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--form-align {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.copyright__text {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.86;
+  text-align: center;
+  color: $black-two;
+  margin-right: 5px;
+  letter-spacing: 0.1px;
+}
+
+.copyright__link {
+  padding: 0;
+  margin: 0;
+  margin-left: 5px;
+}
+
+.copyright__image {
+  padding: 0;
+  margin: 0;
+
+  fill: $black-two;
+
+  &:hover {
+    fill: $light-grey-blue;
+  }
+
+  &:active {
+    fill: $black-30;
+  }
+}

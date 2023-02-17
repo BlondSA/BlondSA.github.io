@@ -1,0 +1,133 @@
+.advantages {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.advantages__text-block {
+  margin: 0;
+  background-color: $light-grey-blue;
+  color: $white;
+
+  @include padding-lr-25;
+  @include padding-tb-40;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__text-block {
+    width: 256px;
+    box-sizing: border-box;
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    @include padding-lr-45;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__text-block {
+    width: 400px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+
+    @include padding-lr-60;
+
+    &--padding-left-right {
+      @include padding-lr-90;
+    }
+  }
+}
+
+.advantages__image {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__image {
+    width: 512px;
+    height: 256px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__image {
+    width: 800px;
+  }
+}
+
+.advantages__image-triangle {
+  margin-bottom: 10px;
+}
+
+.advantages__title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  margin-bottom: 10px;
+
+  &--margin-top {
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__title {
+    font-size: 21px;
+    line-height: 1.24;
+
+    &--margin-top {
+      margin-top: 0;
+    }
+
+    &--padding-lr {
+      padding-left: 8.5px;
+      padding-right: 8.5px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__title {
+    &--padding-lr {
+      padding-left: 35.5px;
+      padding-right: 35.5px;
+    }
+  }
+}
+
+.advantages__number {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.advantages__description {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__description {
+    margin-top: 21px;
+  }
+}

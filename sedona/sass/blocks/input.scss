@@ -1,0 +1,150 @@
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--vertical {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: -6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input--vertical {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 480px;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+
+    &:first-of-type {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-right: 79px;
+    }
+
+    &:last-of-type {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.input__field-wrapper {
+  position: relative;
+  flex-grow: 1;
+}
+
+.input__label {
+  text-transform: uppercase;
+  line-height: 1.86;
+  color: $black;
+  margin-right: 15px;
+
+  &--vertical {
+    margin-left: 22px;
+
+    &:first-child {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .input__label {
+    &--vertical {
+      margin-left: 22px;
+      margin-top: 9px;
+
+      &:first-child {
+        margin-bottom: 7px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input__label {
+    &--vertical {
+      margin-left: 0;
+
+      &:first-child {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input__text-hidden {
+    @include visually-hidden;
+  }
+}
+
+.input__field {
+  background-color: $light-grey;
+  border: none;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 58px;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+
+  &--with-icon {
+    padding-right: 58px;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $black-two;
+    font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    outline: 4px solid $white-four;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input__field {
+    &--with-icon {
+      padding-left: 24px;
+    }
+  }
+}
+
+.input__box {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 58px;
+  height: 58px;
+  right: 0;
+  top: 0;
+  background-color: $dark-grey;
+}
+
+.input__icon {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

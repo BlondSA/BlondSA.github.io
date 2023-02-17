@@ -1,0 +1,46 @@
+.video-buttons {
+  margin: 0;
+  padding: 0;
+  margin-top: -46px;
+
+  @include padding-lr-20;
+}
+
+@media (min-width: $tablet-width) {
+  .video-buttons {
+    position: absolute;
+    width: 648px;
+    height: 93px;
+    bottom: 42px;
+    left: 60px;
+
+    @include padding-lr-0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-buttons {
+    position: absolute;
+    width: 800px;
+    height: auto;
+    bottom: 87px;
+    left: 200px;
+  }
+}
+
+.video-buttons__buttons-control {
+  margin: 0;
+  padding: 0;
+
+  @include padding-lr-25;
+  padding-top: 23px;
+  padding-bottom: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .video-buttons__buttons-control {
+    @include padding-lr-35;
+    @include padding-tb-35;
+    padding-right: 43px;
+  }
+}

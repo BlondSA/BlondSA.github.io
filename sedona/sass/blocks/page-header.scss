@@ -1,0 +1,34 @@
+.page-header {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: $desktop-width;
+  }
+}
+
+.page-header__logo {
+  @include padding-lr-20;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    @include padding-lr-27;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    @include padding-lr-25;
+  }
+}

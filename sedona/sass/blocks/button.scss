@@ -1,0 +1,35 @@
+.button {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.24;
+  text-transform: uppercase;
+  background-color: $light-grey-blue;
+  color: $white-two;
+  cursor: pointer;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @include padding-lr-20;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  // Модификатор для отключения кнопки
+  &--disabled {
+    background-color: $white-four;
+    color: $white;
+    pointer-events: none;
+  }
+}

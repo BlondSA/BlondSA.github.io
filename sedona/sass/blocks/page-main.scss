@@ -1,0 +1,87 @@
+.page-main {
+  padding: 0;
+  margin: 0;
+}
+
+.page-main__promo-block {
+  margin: 0;
+  padding: 0;
+  padding-top: 90px;
+  padding-bottom: 85px;
+  margin-top: -30px;
+
+  @include padding-lr-20;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__promo-block {
+    margin-top: 0;
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
+}
+
+.page-main__page-info {
+  padding: 0;
+  margin: 0;
+}
+
+.page-main__advantages {
+  margin: 0;
+  padding: 0;
+}
+
+.page-main__photo-list {
+  padding: 0;
+  margin: 0;
+}
+
+.page-main__presentation {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__presentation {
+    @include padding-tb-0;
+    @include padding-lr-60;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__presentation {
+    @include padding-tb-0;
+    @include padding-lr-200;
+  }
+}
+
+.page-main__find-hotel {
+  padding-top: 30px;
+
+  @include padding-lr-20;
+  padding-bottom: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__find-hotel {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__find-hotel {
+    padding-bottom: 67px;
+  }
+}
+
+
+.page-main__map {
+  margin: 0;
+  padding: 0;
+}
+
+.page-main__reference {
+  padding: 0;
+  margin: 0;
+}

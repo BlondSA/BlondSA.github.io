@@ -1,0 +1,369 @@
+.form {
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding-bottom: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding-bottom: 69px;
+  }
+}
+
+.form__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.form__fieldset-wrapper {
+  border-top: 1px solid $light-grey;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  order: 1;
+  width: 100%;
+
+  @include padding-lr-20;
+
+  &--contacts {
+    padding-bottom: 29px;
+  }
+
+  &:last-of-type {
+    padding-bottom: 45px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset-wrapper {
+    border-top: none;
+
+    @include padding-lr-60;
+    width: 100%;
+
+    &--order-tablet {
+      order: 0;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 1px;
+        height: 100%;
+        background-color: $grey;
+        top: 50%;
+        right: -1px;
+        transform: translateY(-50%);
+      }
+    }
+
+    &--contacts {
+      padding-top: 66px;
+    }
+
+    &--tablet-orientation {
+      width: 264px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &--attractions {
+      padding-top: 28px;
+      padding-bottom: 33px;
+    }
+
+    &:last-of-type {
+      padding-bottom: 54px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset-wrapper {
+    @include padding-lr-120;
+
+    &--tablet-orientation {
+      width: 400px;
+    }
+
+    &--contacts {
+      padding-top: 66px;
+    }
+
+    &--desktop-orientation {
+      width: 400px;
+      padding-right: 75px;
+      padding-left: 125px;
+    }
+
+    &--attractions {
+      padding-bottom: 28px;
+    }
+
+    &:first-of-type {
+      padding-left: 80px;
+    }
+
+    &:first-of-type .form__field {
+      width: 400px;
+    }
+
+    &:last-of-type {
+      padding-bottom: 55px;
+    }
+  }
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__legend {
+  margin: 0 auto 20px;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  text-align: center;
+  color: $black-two;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .form__legend {
+    width: 400px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 21px;
+    margin-bottom: 55px;
+    background-color: #ffffff;
+
+    &--contacts {
+      margin-bottom: 14px;
+    }
+
+    &--attractions {
+      margin-bottom: 28px;
+      line-height: 1.17;
+    }
+
+    &--tablet-orientation {
+      width: 268px;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: left;
+      white-space: nowrap;
+      margin-left: 0;
+    }
+  }
+
+  .form__legend--line-through {
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 648px;
+      height: 1px;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%);
+      background-color: $grey;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__legend {
+    padding-left: 0;
+    padding-right: 0;
+
+    &--tablet-orientation {
+      width: inherit;
+    }
+
+    &--padding-left {
+      padding-left: 76px;
+    }
+
+    &--contacts {
+      margin-bottom: 71px;
+    }
+  }
+
+  .form__legend--line-through {
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 960px;
+      height: 1px;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%);
+      background-color: $grey;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fields-wrapper--contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.form__field {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.form__textarea {
+  padding: 15px 20px;
+  margin: 0;
+  min-height: 160px;
+  background-color: $light-grey;
+  border: none;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  box-sizing: border-box;
+  width: 100%;
+  resize: vertical;
+
+  &::-webkit-input-placeholder {
+    color: $black-two;
+    font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background: #ffffff;
+    outline: 4px solid #e5e5e5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__textarea {
+    padding-left: 22px;
+    padding-top: 17px;
+  }
+}
+
+.form__rows-wrapper {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .form__rows-wrapper {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 95px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__rows-wrapper {
+    justify-content: space-between;
+
+    @include padding-lr-0;
+  }
+}
+
+.form__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form__footer {
+    justify-content: space-between;
+
+    @include padding-lr-60;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__footer {
+    justify-content: space-between;
+
+    @include padding-lr-120;
+  }
+}
+
+.form__button {
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__button {
+    width: 50%;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__button {
+    width: 50%;
+    padding-right: 17px;
+  }
+}
+
+.form__required {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1.86;
+
+  @include visually-hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .form__required {
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    margin: inherit;
+    border: inherit;
+    clip: inherit;
+    overflow: inherit;
+  }
+}

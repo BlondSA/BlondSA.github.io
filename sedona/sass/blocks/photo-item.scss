@@ -1,0 +1,185 @@
+.photo-item {
+  list-style: none;
+  margin: 0;
+  border-top: 1px solid $black-30;
+
+  &:last-child {
+    border-bottom: 1px solid $black-30;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo-item {
+    border-top: none;
+    width: 50%;
+
+    &:first-child {
+      width: 100%;
+    }
+
+    &:last-child {
+      border-bottom: none;
+      margin-right: auto;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .photo-item {
+    width: ($desktop-width/3);
+  }
+}
+
+.photo-item__figure {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .photo-item__figure {
+    position: relative;
+  }
+}
+
+.photo-item__link {
+  margin: 0;
+  padding: 0;
+}
+
+.photo-item__image {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-item__image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.photo-item__caption {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-item__caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $light-grey;
+
+    @include padding-lr-20;
+    padding-top: 15px;
+    padding-bottom: 21px;
+
+    &--padding-right {
+      padding-right: 30px;
+    }
+
+    &--padding-right-road {
+      padding-right: 38px;
+      background-color: #eaeaea;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .photo-item__caption {
+    background-color: $black-60;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    color: $white;
+  }
+}
+
+
+.photo-item__title {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.71;
+  color: $black-two;
+  margin-top: 14px;
+  margin-bottom: 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-item__title {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-item__title {
+    color: $white;
+  }
+}
+
+.photo-item__author {
+  margin: 0;
+  padding: 0;
+  margin-top: 3px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-item__author {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-item__author {
+    color: $white;
+  }
+}
+
+.photo-item__likes {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  line-height: 1.71;
+  color: $black-two;
+  padding-left: 38px;
+  margin-top: 12px;
+  position: relative;
+}
+
+.photo-item__likes-image {
+  display: block;
+  position: absolute;
+  width: 23px;
+  height: 21px;
+  opacity: 0.3;
+  left: 0;
+  top: -2px;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-item__likes {
+    margin-top: 7px;
+    padding-left: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-item__likes {
+    color: $white-two;
+  }
+
+  .photo-item__likes-image {
+    opacity: 1;
+    fill: $white-two;
+  }
+}
