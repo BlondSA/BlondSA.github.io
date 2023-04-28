@@ -1,0 +1,66 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	font-size: 20px;
+	line-height: 1.2;
+	font-family: Helvetica, Arial, sans-serif;
+	color: tomato;
+	background: url("../img/pattern-randomized.svg") center center/cover repeat;
+}
+
+main {
+	padding: 20px 20px 120px 20px;
+	text-align: center;
+}
+
+.project-wrapper {
+	margin: 0 auto;
+	padding: 50px;
+	width: 100%;
+	min-height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 50px;
+	transform: translateY(50%);
+}
+
+.project-list {
+	margin: 0 auto;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.project-item {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 10px;
+	margin: 20px;
+	width: 250px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.project-title {
+	margin: 0 auto;
+	padding: 20px;
+
+	font-weight: normal;
+	letter-spacing: -1px;
+}
+
+a:link,
+a:visited {
+	color: tomato;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}

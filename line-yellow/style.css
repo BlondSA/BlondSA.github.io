@@ -1,0 +1,35 @@
+.loading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 50vw;
+	height: 50vh;
+	margin: 0 auto;
+}
+
+.loading__stroke {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+}
+
+.loading__text {
+	display: block;
+	font-size: 30px;
+	text-align: center;
+}
+.loading__container {
+	width: 50vh;
+	height: 50px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+.loading__line {
+	height: 100%;
+	width: 0%;
+	background-color: rgb(181, 181, 18);
+	border-radius: 4px;
+}
