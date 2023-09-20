@@ -15,7 +15,6 @@ main {
 
 .project-wrapper {
 	margin: 0 auto;
-	padding: 50px;
 	width: 100%;
 	min-height: 500px;
 	display: flex;
@@ -38,7 +37,6 @@ main {
 
 .project-item {
 	box-sizing: border-box;
-	margin: 0 auto;
 	padding: 10px;
 	margin: 20px;
 	width: 250px;
