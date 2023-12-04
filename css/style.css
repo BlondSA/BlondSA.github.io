@@ -45,6 +45,10 @@ main {
 	justify-content: center;
 }
 
+.project-item a {
+	width: 100%;
+}
+
 .project-title {
 	margin: 0 auto;
 	padding: 20px;
