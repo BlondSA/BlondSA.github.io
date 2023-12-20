@@ -41,12 +41,12 @@ main {
 	margin: 20px;
 	width: 250px;
 	height: 46px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 .project-item a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
 	height: 100%;
 }
